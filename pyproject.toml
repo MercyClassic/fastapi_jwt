@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi_jwt"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+fastapi = "^0.101.0"
+SQLAlchemy = "^2.0.16"
+pydantic = "^2.1.1"
+redis = "^4.6.0"
+httpx = "^0.24.1"
+pyjwt = "^2.8.0"
+asyncpg = "^0.28.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.1"
