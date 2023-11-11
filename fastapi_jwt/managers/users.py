@@ -22,7 +22,6 @@ class UserManager:
         )
         return {
             'user_id': int(access_token_data.get('sub')),
-            'is_superuser': access_token_data.get('is_superuser'),
         }
 
     @staticmethod

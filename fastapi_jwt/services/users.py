@@ -24,9 +24,4 @@ class UserService:
                 status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
                 detail='Credentials are not valid',
             )
-        if 'is_active' in dir(user) and not user.is_active:
-            raise HTTPException(
-                status_code=status.HTTP_403_FORBIDDEN,
-                detail='Account is not active',
-            )
         return user.id
